@@ -6,14 +6,21 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B27020942DCCE93100431D96 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = B27020932DCCE93100431D96 /* SDWebImageSwiftUI */; };
+		B274BA092DCF6A4C00E1B27B /* SwiftfulRouting in Frameworks */ = {isa = PBXBuildFile; productRef = B274BA082DCF6A4C00E1B27B /* SwiftfulRouting */; };
+		B274BA0C2DCF6A8500E1B27B /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = B274BA0B2DCF6A8500E1B27B /* SwiftfulUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		B270207B2DCCE83500431D96 /* SpotifyBySWiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyBySWiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B270207B2DCCE83500431D96 /* SwiftUIinPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIinPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B27020902DCCE90400431D96 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		B270207D2DCCE83500431D96 /* SpotifyBySWiftUI */ = {
+		B270207D2DCCE83500431D96 /* SwiftUIinPractice */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SpotifyBySWiftUI;
+			path = SwiftUIinPractice;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +30,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B274BA0C2DCF6A8500E1B27B /* SwiftfulUI in Frameworks */,
+				B27020942DCCE93100431D96 /* SDWebImageSwiftUI in Frameworks */,
+				B274BA092DCF6A4C00E1B27B /* SwiftfulRouting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,7 +42,8 @@
 		B27020722DCCE83500431D96 = {
 			isa = PBXGroup;
 			children = (
-				B270207D2DCCE83500431D96 /* SpotifyBySWiftUI */,
+				B270207D2DCCE83500431D96 /* SwiftUIinPractice */,
+				B270208F2DCCE90400431D96 /* Frameworks */,
 				B270207C2DCCE83500431D96 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,17 +51,25 @@
 		B270207C2DCCE83500431D96 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B270207B2DCCE83500431D96 /* SpotifyBySWiftUI.app */,
+				B270207B2DCCE83500431D96 /* SwiftUIinPractice.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B270208F2DCCE90400431D96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B27020902DCCE90400431D96 /* Accelerate.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B270207A2DCCE83500431D96 /* SpotifyBySWiftUI */ = {
+		B270207A2DCCE83500431D96 /* SwiftUIinPractice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B27020892DCCE83600431D96 /* Build configuration list for PBXNativeTarget "SpotifyBySWiftUI" */;
+			buildConfigurationList = B27020892DCCE83600431D96 /* Build configuration list for PBXNativeTarget "SwiftUIinPractice" */;
 			buildPhases = (
 				B27020772DCCE83500431D96 /* Sources */,
 				B27020782DCCE83500431D96 /* Frameworks */,
@@ -61,13 +80,16 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				B270207D2DCCE83500431D96 /* SpotifyBySWiftUI */,
+				B270207D2DCCE83500431D96 /* SwiftUIinPractice */,
 			);
-			name = SpotifyBySWiftUI;
+			name = SwiftUIinPractice;
 			packageProductDependencies = (
+				B27020932DCCE93100431D96 /* SDWebImageSwiftUI */,
+				B274BA082DCF6A4C00E1B27B /* SwiftfulRouting */,
+				B274BA0B2DCF6A8500E1B27B /* SwiftfulUI */,
 			);
 			productName = SpotifyBySWiftUI;
-			productReference = B270207B2DCCE83500431D96 /* SpotifyBySWiftUI.app */;
+			productReference = B270207B2DCCE83500431D96 /* SwiftUIinPractice.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +107,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B27020762DCCE83500431D96 /* Build configuration list for PBXProject "SpotifyBySWiftUI" */;
+			buildConfigurationList = B27020762DCCE83500431D96 /* Build configuration list for PBXProject "SwiftUIinPractice" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -94,12 +116,17 @@
 			);
 			mainGroup = B27020722DCCE83500431D96;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B27020922DCCE93100431D96 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				B274BA072DCF6A4C00E1B27B /* XCRemoteSwiftPackageReference "SwiftfulRouting" */,
+				B274BA0A2DCF6A8500E1B27B /* XCRemoteSwiftPackageReference "SwiftfulUI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B270207C2DCCE83500431D96 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B270207A2DCCE83500431D96 /* SpotifyBySWiftUI */,
+				B270207A2DCCE83500431D96 /* SwiftUIinPractice */,
 			);
 		};
 /* End PBXProject section */
@@ -303,7 +330,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B27020762DCCE83500431D96 /* Build configuration list for PBXProject "SpotifyBySWiftUI" */ = {
+		B27020762DCCE83500431D96 /* Build configuration list for PBXProject "SwiftUIinPractice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B27020872DCCE83600431D96 /* Debug */,
@@ -312,7 +339,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B27020892DCCE83600431D96 /* Build configuration list for PBXNativeTarget "SpotifyBySWiftUI" */ = {
+		B27020892DCCE83600431D96 /* Build configuration list for PBXNativeTarget "SwiftUIinPractice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B270208A2DCCE83600431D96 /* Debug */,
@@ -322,6 +349,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B27020922DCCE93100431D96 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.3;
+			};
+		};
+		B274BA072DCF6A4C00E1B27B /* XCRemoteSwiftPackageReference "SwiftfulRouting" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulRouting.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.1;
+			};
+		};
+		B274BA0A2DCF6A8500E1B27B /* XCRemoteSwiftPackageReference "SwiftfulUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B27020932DCCE93100431D96 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B27020922DCCE93100431D96 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		B274BA082DCF6A4C00E1B27B /* SwiftfulRouting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B274BA072DCF6A4C00E1B27B /* XCRemoteSwiftPackageReference "SwiftfulRouting" */;
+			productName = SwiftfulRouting;
+		};
+		B274BA0B2DCF6A8500E1B27B /* SwiftfulUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B274BA0A2DCF6A8500E1B27B /* XCRemoteSwiftPackageReference "SwiftfulUI" */;
+			productName = SwiftfulUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B27020732DCCE83500431D96 /* Project object */;
 }
